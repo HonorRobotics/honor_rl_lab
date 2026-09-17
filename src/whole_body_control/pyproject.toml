@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools", "wheel", "toml"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "whole_body_control"
+version = "0.2.1"
+description = "Reinforcement learning for the VITA BOY humanoid robot."
+dependencies = [
+    "numpy==1.26.0",
+    "opencv-python>=4.5,<4.12",
+    "mujoco>=3.3.0",
+    "onnxruntime>=1.21.0",
+    "pynput>=1.7.7",
+    "pyyaml>=6.0",
+    "tomli>=2.0.0; python_version < '3.11'",
+]
+requires-python = ">=3.10"
+license = { text = "Apache 2.0" }
+authors = [
+    { name = "HonorRobotics" }
+]
+maintainers = [
+    { name = "HonorRobotics" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: POSIX :: Linux"
+]
+dynamic = []
